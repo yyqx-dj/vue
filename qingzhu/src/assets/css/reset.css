@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    padding-top: 61px;
+}
+.inner{
+    width: 1100px;
+    margin: 0 auto;
+}
+a{
+    color: #999;
+}
+i,span,p{
+    color: #666
+}

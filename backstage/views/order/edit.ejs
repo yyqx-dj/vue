@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单修改</title>
+</head>
+<body>
+<!--The content below is only a placeholder and can be replaced.-->
+
+<link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="/css/basic.css">
+
+
+<!-- top -->
+<%- include  ../common/top.ejs   %>
+<div class="container-fluid">
+    <div class="row">
+        
+
+        <!-- left -->
+
+        <%- include  ../common/left.ejs   %>
+
+
+
+        <div class="col-sm-10">
+            <ol class="breadcrumb">
+                <li class="active">订单管理
+                </li>
+                <li class="active">订单列表
+                </li>
+            </ol>
+            <div class="panel panel-default">
+              
+			    <div class="panel-heading">
+                  修改订单
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive input-form">
+                        <form action="/order/doEdit">
+                            <ul>
+                                <li>订单状态:
+                                    <input type="radio" name="status" value="1" <%= order.status == 1 ? 'checked' : "" %>/>新订单
+                                    <input type="radio" name="status" value="2" <%= order.status == 2 ? 'checked' : "" %>/>已发货
+                                    <input type="radio" name="status" value="3" <%= order.status == 3 ? 'checked' : "" %>/>订单完成
+                                </li>
+                                <!-- 传递id，作为修改的条件 -->
+                                <input type="hidden" name="id" value="<%= order._id %>">
+                                <li>
+                                    <br/>
+                                    <button type="submit" class="btn btn-default">修改</button>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
