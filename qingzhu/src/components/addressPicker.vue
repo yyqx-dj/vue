@@ -51,9 +51,7 @@ export default {
   },
   methods: {
     open() {
-      console.log(this.addressJson);
       this.user.id=this.addressJson._id;
-      console.log(this.addressJson);
       this.user.name=this.addressJson.name;
       this.user.phone=this.addressJson.phone;
       this.user.address=this.addressJson.address;
@@ -76,7 +74,7 @@ export default {
         name: "",
         phone: "",
         address: "",
-        value:true
+        value:""
       }
         }
       })
@@ -84,6 +82,14 @@ export default {
     },
     cancel() {
       this.$emit("hidePicker");
+        this.user= {
+        id:"",
+        username: JSON.parse(localStorage.getItem("ReUser")).name,
+        name: "",
+        phone: "",
+        address: "",
+        value:""
+      }
     },
     agree() {
       // this.$store.dispatch("addAddress", this.user);

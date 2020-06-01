@@ -34,10 +34,9 @@ methods: {
               }
           }).then(res=>{
               this.addressJson=res.data[0]
-             
               console.log(this.addressJson)
               this.$store.dispatch("addressJson",this.addressJson)
-               this.$emit("dialog")
+              this.$emit("dialog")
 
               })
           this.$emit("showPicker")

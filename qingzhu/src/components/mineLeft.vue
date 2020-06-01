@@ -2,7 +2,7 @@
 <div class="left">
     <ul>
        <div class="ul">
-         <li><span class="iconfont icon-dingdan"></span><h3>订单管理</h3></li>
+        <li><span class="iconfont icon-dingdan"></span><h3>订单管理</h3></li>
         <li is='router-link' to='order' active-class="select">我的订单</li>
         <li is='router-link' to='assemble' active-class="select">我的拼团</li>
         <li><span class="iconfont icon-zhanghu"></span><h3> 账户管理</h3></li>
@@ -13,10 +13,6 @@
         <li is='router-link' to='personalDate' active-class="select">个人资料</li>
         <li is='router-link' to='address' active-class="select">收货地址</li>
        </div>
-      
-       
-        
-     
     </ul>
 </div>
 </template>
