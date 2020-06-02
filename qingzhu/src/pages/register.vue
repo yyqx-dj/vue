@@ -71,7 +71,8 @@ export default {
       this.$axios({
       url: API.sBefore,
       params:{
-         phone:JSON.parse(localStorage.getItem("ReUser")).name
+        //  phone:JSON.parse(localStorage.getItem("ReUser")).name
+        phone:this.user.name
       }
     }).then(res => {
       if(res.data.length==0){

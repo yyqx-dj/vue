@@ -2,7 +2,8 @@ let { app, port, multiparty, MongoClient, DBurl, fs, ObjectId,bodyParser} = requ
 
 // 1-4 设置路由
 app.get('/', (req, res) => {
-    res.redirect('/type/index')
+    // res.redirect('/type/index')
+    res.redirect('/user/index')
 
 })
 // ===============用户模块开始======================
