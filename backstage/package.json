@@ -16,6 +16,6 @@
     "multiparty": "^4.2.1"
   },
   "devDependencies": {
-    "mongodb": "^2.2.33"
+    "mongodb": "^3.1.13"
   }
 }
